@@ -30,12 +30,57 @@
   </head>
 
 
-  <body>
-    <h1>Hello, world! Page development in progress</h1>
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">    <!--Navigation Bar at the top -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    	<div class="container">
+    		<div class="navbar-header">
+    			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+    				<i class="fa fa-bars"></i>
+    			</button>
+    			<a class="navbar-brand page-scroll" href="#page-top">
+    				<i class="fa fa-play-circle"></i> 
+    				<span class="light">Start</span>
+    				Bootstrap
+    			</a>
+    		</div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    		<div class="collapse navbar-cpllapse navbar-right navbar-main-collapse">
+    			<u1 class="nav navbar-nav">
+    				<li class="hidden">
+    					<a href="#page-top"></a>
+    				</li>
+    				<li>
+    					<a class="page-scroll" href="#about">About</a>
+    				</li>
+    				<li>
+    					<a class="page-scroll" href="#projects">Projects</a>
+    				</li>
+    				<li>
+    					<a class="page-scroll" href="#contact">Contact</a>
+    				</li>
+    			</u1>
+    			
+    		</div>
+
+    	</div>
+    </nav>
+
+
+
+
+
+
+
+
+	 <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-  </body>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/portfolio.js"></script>
 </html>
