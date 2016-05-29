@@ -182,21 +182,27 @@ a:focus {
     }
 }
 .pad-top {
-	padding-top: 100px; 
+	padding-top: 75px; 
 }
 .project-section {
 	width: 100%;
-	padding: 300px 0;
-	color: #fff;
+	padding: 50px 0;
+	color: #000;
 
 }
 .carousel{
-    background: #2f4357;
-    margin-top: 20px;
+    background: #000;
+    margin-top: 10px;
 }
 .carousel .item img{
-    margin: 0 auto; /* Align slide image horizontally center */
+	opacity: 0.4;
+	width: 100%;
+    margin: 0 auto; /*Align slide image horizontally center*/
+    height: 500px; 
+    
+
 }
+
 .bs-example{
-	margin: 20px;
+	margin: 10px;
 }
