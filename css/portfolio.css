@@ -184,6 +184,9 @@ a:focus {
 .pad-top {
 	padding-top: 75px; 
 }
+.pad-top-super {
+	padding-top: 130px;
+}
 .project-section {
 	width: 100%;
 	padding: 50px 0;
