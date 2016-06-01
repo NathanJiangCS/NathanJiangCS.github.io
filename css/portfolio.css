@@ -167,6 +167,7 @@ a:focus {
 .intro .intro-body .big-heading {
 	padding-top: 20px;
 	font-size: 40px;
+
 }
 .intro .intro-body .intro-text {
 	font-size: 18px;
@@ -222,6 +223,7 @@ a:focus {
 	margin: 10px;
 }
 .btn-outline {
+	font-family: Ubuntu,"Helvetica Neue",Helvetica,Arial,sans-serif;
     margin-top: 15px;
     margin-bottom: 15px;
     padding: 18px 24px;
@@ -235,7 +237,7 @@ a:focus {
 }
 .btn-outline:hover,
 .btn-outline:active{
-	color:#720e9e;
+	color:#42dca3;
 	background-color:#fff
 	;border-color:#fff
 }
