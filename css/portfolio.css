@@ -222,6 +222,7 @@ a:focus {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    box-shadow: 0 0 8px 8px black inset;
 
 }
 .bs-example{
