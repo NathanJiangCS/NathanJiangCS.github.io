@@ -185,6 +185,12 @@ a:focus {
 .pad-top {
 	padding-top: 75px; 
 }
+.secondary {
+	font-size: 15px;
+}
+.tertiary {
+	font-size: 18px;
+}
 .pad-top-super {
 	padding-top: 130px;
 }
