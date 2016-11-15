@@ -8,14 +8,18 @@
 
     <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,500,300' rel='stylesheet' type='text/css'>
 
-    <link rel="stylesheet" href=""/>
+    <link rel='shortcut icon' href="{{url_for('static', filename='imgs/favicon.ico') }}" type="image">
+
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css') }}"/>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/skeleton.min.css') }}"/>
 
     <script type="text/javascript" src="{{ url_for('static', filename='js/pt.min.js') }}"></script>
-	<script type="text/javascript" src=""></script>
+    <script type="text/javascript" src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
 
 </head>
 <body>
-	{% block content %} {% endblock %}
+	{% block animation %} {% endblock %}
 	
 </body>
 	

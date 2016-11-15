@@ -1,10 +1,13 @@
 {% extends "base.html" %}
 {% block animation %}
-	<header id="pt"></header>
-	<h1>hi again</h1>
-
+	
+	{% block navbar %}{% endblock %}
+	<div class="u-max-full-width u-max-full-height"
+	
+	</div>
+	{% block body %}{% endblock %}
 	<script type="text/javascript">
-		window.demoDescription = "A circle moves in a field of random points. If a point intersects with the circle, it grows bigger and moves slightly toward the circle's center.";
+	window.demoDescription = "Pairs of points revolve around a center point. Draw a line whose color depends on whether the mouse position is on left or right side of the pair, or if the 3 points are collinear.";
 
 
 	//// 1. Define Space and Form
@@ -17,39 +20,47 @@
 
 
 	//// 2. Create Elements
-	var mouse = new Circle( space.size.$divide(2) ).setRadius(200);
-	var pts = [];
-	for (var i=0; i<500; i++) {
-	  pts.push( space.size.$multiply( Math.random(), Math.random()) );
+	var pairs = [];
+	var center = space.size.$divide(2);
+	var mouse = center.clone();
+
+	var steps = 200;
+	var r = Math.min( space.size.x, space.size.y ) * 1;
+	var dr = Math.min( space.size.x, space.size.y ) * 1 / steps;
+
+	// create pairs
+	for (var i=0; i<steps; i++) {
+	  var p = new Pair( Math.random()*r, Math.random()*r ).to( Math.random()*-r, Math.random()*-r );
+	  p.moveBy( center ).rotate2D( i*Math.PI/steps, center );
+	  pairs.push( p );
 	}
+
 
 	//// 3. Visualize, Animate, Interact
 	space.add({
 	  animate: function(time, fps, context) {
+	    for (var i=0; i<pairs.length; i++) {
 
-	    // change mouse radius
-	    mouse.setRadius( mouse.y/space.size.y * 200 + 70 );
-	    form.stroke(false);
+	      // rotate each pair by 0.1 degree
+	      var pr = pairs[i];
+	      pr.rotate2D( Const.one_degree/10, center );
 
-	    // go through each point
-	    for (var i=0; i<pts.length; i++) {
+	      // check collinearity with mouse, and draw a line with different color
+	      var col = pr.collinear(mouse);
 
-	      var size = 0.5;
-	      var _p = pts[i].clone();
+	      // Exact collinearity with return 0, but here we just check for a generous threshold
+	      if ( Math.abs( col ) < 200 ) {
+	        form.stroke("#fff");
+	        form.line( pr );
+	        form.line( pr.clone().to( mouse ) );
 
-	      // if intersecting with mouse circle, change its size and scale from mouse anchor point
-	      if (mouse.intersectPoint( pts[i]) ) {
-	        var dist =  (mouse.radius - pts[i].distance( mouse )) / mouse.radius;
-	        size = dist * 20;
-	        form.fill( colors["a"+(i%4+1)] );
-	        _p.scale2D( 1+dist, 1+dist, mouse );
-
+	      // not collinear, check whether mouse is on left or right side
 	      } else {
-	        form.fill( "#fff" );
+	        form.stroke( ( (col<0) ? "rgba(255,255,0,.1)" : "rgba(0,255,255,.1)") ).line( pr );
+	        form.stroke(false ).fill("#fff").points( pr.toArray(), 0.5) ;
 	      }
 
-	      // draw points
-	      form.point( _p, size, true );
+	      form.fill( colors.a1 ).stroke(false).point( mouse, 1.5, true );
 	    }
 	  },
 
