@@ -3,7 +3,7 @@
 	
 	{% block navbar %}{% endblock %}
 	<div class="u-max-full-width u-max-full-height"
-	
+		<header id="pt"></header>
 	</div>
 	{% block body %}{% endblock %}
 	<script type="text/javascript">
@@ -60,19 +60,11 @@
 	        form.stroke(false ).fill("#fff").points( pr.toArray(), 0.5) ;
 	      }
 
-	      form.fill( colors.a1 ).stroke(false).point( mouse, 1.5, true );
+	      
 	    }
 	  },
 
-	  onMouseAction: function(type, x, y, evt) {
-	    if (type=="move") {
-	      mouse.set(x,y);
-	    }
-	  },
-
-	  onTouchAction: function(type, x, y, evt) {
-	    this.onMouseAction( type, x, y );
-	  }
+	  
 	});
 
 
