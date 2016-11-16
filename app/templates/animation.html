@@ -53,7 +53,7 @@
 
 	      // Exact collinearity with return 0, but here we just check for a generous threshold
 	      if ( Math.abs( col ) < 200 ) {
-	        form.stroke("#fff");
+	        
 	        form.line( pr );
 	        form.line( pr.clone().to( mouse ) );
 
@@ -67,13 +67,22 @@
 	    }
 	  },
 
-	  
-	});
+		onMouseAction: function(type, x, y, evt) {
+		    if (type=="move") {
+		      mouse.set(x,y);
+		    }
+		  },
+
+		  onTouchAction: function(type, x, y, evt) {
+		    this.onMouseAction( type, x, y );
+		  }
+		});
 
 
-	// 4. Start playing
-
-	space.play();
+		// 4. Start playing
+		space.bindMouse();
+		space.bindTouch();
+		space.play();
 
 	</script>
 {% endblock %}
