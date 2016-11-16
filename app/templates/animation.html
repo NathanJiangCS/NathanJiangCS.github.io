@@ -2,10 +2,13 @@
 {% block animation %}
 	
 	{% block navbar %}{% endblock %}
-	<div class="u-max-full-width u-max-full-height"
-		<header id="pt"></header>
-	</div>
+	
+	<header id="pt"></header>
+	
 	{% block body %}{% endblock %}
+
+
+
 	<script type="text/javascript">
 	window.demoDescription = "Pairs of points revolve around a center point. Draw a line whose color depends on whether the mouse position is on left or right side of the pair, or if the 3 points are collinear.";
 
@@ -25,8 +28,8 @@
 	var mouse = center.clone();
 
 	var steps = 200;
-	var r = Math.min( space.size.x, space.size.y ) * 1;
-	var dr = Math.min( space.size.x, space.size.y ) * 1 / steps;
+	var r = Math.min( space.size.x, space.size.y ) * 0.7;
+	var dr = Math.min( space.size.x, space.size.y ) * 0.7 / steps;
 
 	// create pairs
 	for (var i=0; i<steps; i++) {
@@ -43,7 +46,7 @@
 
 	      // rotate each pair by 0.1 degree
 	      var pr = pairs[i];
-	      pr.rotate2D( Const.one_degree/10, center );
+	      pr.rotate2D( Const.one_degree/20, center );
 
 	      // check collinearity with mouse, and draw a line with different color
 	      var col = pr.collinear(mouse);
@@ -69,8 +72,7 @@
 
 
 	// 4. Start playing
-	space.bindMouse();
-	space.bindTouch();
+
 	space.play();
 
 	</script>
