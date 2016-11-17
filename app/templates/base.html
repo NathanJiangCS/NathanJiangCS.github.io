@@ -4,23 +4,21 @@
 	<meta http-equiv='Content-type' content='text/html; charset=utf-8'>
     <title>Nathan Jiang - Software Engineer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-
-    <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,500,300' rel='stylesheet' type='text/css'>
 
     <link rel='shortcut icon' href="{{url_for('static', filename='imgs/favicon.ico') }}" type="image">
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css'>
 
     <link rel="stylesheet" href="{{url_for('static', filename='css/style.css') }}"/>
-    <link rel="stylesheet" href="{{url_for('static', filename='css/skeleton.css') }}"/>
 
-    <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
-    <script type="text/javascript" src="{{ url_for('static', filename='js/pt.min.js') }}"></script>
-    <script type="text/javascript" src="{{ url_for('static', filename='js/scrollreveal.min.js') }}"></script>
-	
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+    <script type="text/javascript" src="{{url_for('static', filename='js/script.js') }}"></script>
+    <script type="text/javascript" src="{{url_for('static', filename='js/pt.min.js') }}"></script>
+    <!--<link rel="stylesheet" href="{{url_for('static', filename='css/skeleton.css') }}"/> -->
 
 </head>
 <body>
-	{% block animation %} {% endblock %}
+	{% block content %} {% endblock %}
 	
 </body>
 	
