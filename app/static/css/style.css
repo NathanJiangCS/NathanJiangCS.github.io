@@ -28,10 +28,10 @@ html, body, .page {
 }
 
 #p1 { background: darkslateblue; }
-#p2 { background: tomato; }
-#p3 { background: gold; }
-#p4 { background: deeppink; }
-#p5 { background: rebeccapurple; }
+#p2 { background: #ff2d5d; }
+#p3 { background: #42dc8e; }
+#p4 { background: #2e43eb; }
+#p5 { background: #ffe359; }
 
 #t2:target #p2,
 #t3:target #p3,

@@ -7,14 +7,14 @@
       <div class="ct" id="t4">
          <div class="ct" id="t5">
 
-
-          <ul id="menu">
-            <a href="#t1"><li class="icon fa fa-bolt" id="uno"></li></a>
-            <a href="#t2"><li class="icon fa fa-user-circle-o" id="dos"></li></a>
-            <a href="#t3"><li class="icon fa fa-free-code-camp" id="tres"></li></a>
-            <a href="#t4"><li class="icon fa fa-file-text" id="cuatro"></li></a>
-            <a href="#t5"><li class="icon fa fa-comments-o" id="cinco"></li></a>
-          </ul>
+         
+            <ul id="menu">
+              <a href="#t1"><li class="icon fa fa-bolt" id="uno" title="Home"></li></a>
+              <a href="#t2"><li class="icon fa fa-user-circle-o" id="dos" title="About Me"></li></a>
+              <a href="#t3"><li class="icon fa fa-free-code-camp" id="tres" title="Projects"></li></a>
+              <a href="#t4"><li class="icon fa fa-file-text" id="cuatro" title="Resume"></li></a>
+              <a href="#t5"><li class="icon fa fa-comments-o" id="cinco" title="Contact Me"></li></a>
+            </ul>
 
 
           <div class="page" id="p1">
@@ -31,8 +31,8 @@
 
               //// 2. Create Elements
               var mouse = new Circle( space.size.$divide(2) ).setRadius(200);
-              var ball_x = window.innerWidth * Math.random() + 1; var dx = 4 * (Math.random() > 0.5 ? 1 : -1);
-              var ball_y = window.innerHeight * Math.random() + 1; var dy = 4 * (Math.random() > 0.5 ? 1 : -1);
+              var ball_x = window.innerWidth * Math.random() +1; var dx = 4 * (Math.random() > 0.5 ? 1 : -1);
+              var ball_y = window.innerHeight * Math.random() +1; var dy = 4 * (Math.random() > 0.5 ? 1 : -1);
               var pts = [];
               for (var i=0; i<500; i++) {
                 pts.push( space.size.$multiply( Math.random(), Math.random()) );
@@ -101,37 +101,25 @@
 
 
           <div class="page" id="p2">
-            <section class="icon fa fa-keyboard-o"><span class="title">Type</span></section>
+  
           </div>  
 
 
 
           <div class="page" id="p3">
-            <section class="icon fa fa-rocket"><span class="title">Rocket</span></section>
+
           </div>
 
 
 
           <div class="page" id="p4">
-            <section class="icon fa fa-dribbble">
-              <span class="title">Dribbble</span>
-              <p class="hint">
-                <a href="https://dribbble.com/albertohartzet" target="_blank">Im ready to play, <span class="hint line-trough">invite me </span> find me</a>
-              </p>
-              <p class="hint">Already invited by <a href="http://www.dribbble.com/mrpeters" target="_blank">Stan Peters</a></p>
-            </section>
+
           </div> 
 
 
 
           <div class="page" id="p5">
-            <section class="icon fa fa-plus-circle">
-              <span class="title">More</span>
-              <p class="hint">
-                <span>You love one page & CSS only stuff? </span><br/>
-                <a href="http://codepen.io/hrtzt/details/pgXMYb/" target="_blank">check this pen "Pure CSS One page vertical navigation"</a>
-              </p>
-            </section>
+
           </div> 
 
 
