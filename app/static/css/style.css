@@ -27,7 +27,7 @@ html, body, .page {
   left: 200%;
 }
 
-#p1 { background: darkslateblue; }
+#p1 { background: #222; }
 #p2 { background: #ff2d5d; }
 #p3 { background: #42dc8e; }
 #p4 { background: #2e43eb; }
@@ -193,7 +193,69 @@ a {
 
 #pt{
 
-  height: 100vh;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  
+  position: absolute;
 
+}
+
+.inversePair {
+    display: inline-block;    
+    position: relative;    
+    height: 100%;
+    text-align: center;
+    line-height: 100px;
+    vertical-align: middle;
+}
+
+#b {
+    width: 35%;
+    /* need to play with margin/padding adjustment
+       based on your desired "gap" */
+    right: 0;
+    float: right;
+    /* the inverse circle "cut" */
+    background-image: -moz-radial-gradient(
+        left 50%, /* the -23px left position varies by your "gap" */
+        50px 400px, /* keep radius to half height */
+        transparent 0, /* transparent at center */
+        transparent 55px, /*transparent at edge of gap */
+        #ff2d5d 56px, /* start circle "border" */
+        #ff2d5d 57px /* end circle border and begin color of rest of background */
+    );
+    background-image: -webkit-radial-gradient(
+        left 50%, /* the -23px left position varies by your "gap" */
+        50px 400px, /* keep radius to half height */
+        transparent 0, /* transparent at center */
+        transparent 55px, /*transparent at edge of gap */
+        #ff2d5d 56px, /* start circle "border" */
+        #ff2d5d 57px /* end circle border and begin color of rest of background */
+    );
+    background-image: -ms-radial-gradient(
+        left 50%, /* the -23px left position varies by your "gap" */
+        50px 400px, /* keep radius to half height */
+        transparent 0, /* transparent at center */
+        transparent 55px, /*transparent at edge of gap */
+        #ff2d5d 56px, /* start circle "border" */
+        #ff2d5d 57px /* end circle border and begin color of rest of background */
+    );
+    background-image: -o-radial-gradient(
+        left 50%, /* the -23px left position varies by your "gap" */
+        50px 400px, /* keep radius to half height */
+        transparent 0, /* transparent at center */
+        transparent 55px, /*transparent at edge of gap */
+        #ff2d5d 56px, /* start circle "border" */
+        #ff2d5d 57px /* end circle border and begin color of rest of background */
+    );
+    background-image: -radial-gradient(
+        left 50%, /* the -23px left position varies by your "gap" */
+        50px 400px, /* keep radius to half height */
+        transparent 0, /* transparent at center */
+        transparent 55px, /*transparent at edge of gap */
+        #ff2d5d 56px, /* start circle "border" */
+        #ff2d5d 57px /* end circle border and begin color of rest of background */
+    );
 }
