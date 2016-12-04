@@ -18,7 +18,16 @@
 
 
           <div class="page" id="p1">
-             <div id="pt"></div>
+             <div id="pt">
+                <div class="mainTitle">
+                  <h1>Nathan Jiang</h1>
+                  <h2>1A Software Engineering
+                      University of Waterloo </h2>
+                </div>
+                
+
+
+             </div>
              <script type="text/javascript">
                  //// 1. Define Space and Form
               var colors = {
@@ -31,8 +40,8 @@
 
               //// 2. Create Elements
               var mouse = new Circle( space.size.$divide(2) ).setRadius(200);
-              var ball_x = window.innerWidth * Math.random() +1; var dx = 4 * (Math.random() > 0.5 ? 1 : -1);
-              var ball_y = window.innerHeight * Math.random() +1; var dy = 4 * (Math.random() > 0.5 ? 1 : -1);
+              var ball_x = window.innerWidth * (Math.random() > 0.5 ? 0.75 : 0.25); var dx = 4 * (Math.random() > 0.5 ? 1 : -1);
+              var ball_y = window.innerHeight * (Math.random() > 0.5 ? 0.75 : 0.25); var dy = 4 * (Math.random() > 0.5 ? 1 : -1);
               var pts = [];
               for (var i=0; i<500; i++) {
                 pts.push( space.size.$multiply( Math.random(), Math.random()) );
@@ -96,10 +105,11 @@
                 ball_y = window.innerHeight/2; 
               };
 
-             </script>
+            </script>
 
             
-              <div id="b" class="inversePair"></div>
+            <!-- <div id="b" class="inversePair"></div> -->
+
 
             
           </div>
@@ -112,9 +122,49 @@
 
 
           <div class="page" id="p3">
+            <div class="row">
+              <aside class="profile-card col-md-2">
+                <header>
+                  
+                  <a href="http://tutsplus.com">
+                    <img src="https://randomuser.me/api/portraits/men/99.jpg">
+                  </a>
+                  <h1>George Darkos</h1>
+                  <h2>- Full Stack Web Developer -</h2>
 
+                </header>
+
+                <div class="profile-bio">
+                  <p>Hello there!</p>
+                  <p>I am a full stack web developer. I mainly work with PHP, HTML, CSS, JS and WordPress.
+                    <br />I also play well with Photoshop, Corel Draw, After Effects and other cool stuff.</p>
+                </div>
+
+                <!-- some social links to show off -->
+                <ul class="profile-social-links">
+                  <!-- twitter -->
+                  <li>
+                    <a href="http://twitter.com/tutsplus">
+                      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/social-twitter.svg">
+                    </a>
+                  </li>
+                  <!-- envato – -->
+                  <li>
+                    <a href="http://envato.com">
+                      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/social-envato.svg">
+                    </a>
+                  </li>
+                  <!-- codepen -->
+                  <li>
+                    <a href="http://codepen.io/tutsplus">
+                      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/social-codepen.svg">
+                    </a>
+                  </li>
+                </ul>
+
+              </aside>
+            </div>
           </div>
-
 
 
           <div class="page" id="p4">
