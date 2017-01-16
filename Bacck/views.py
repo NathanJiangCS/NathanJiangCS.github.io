@@ -1,16 +1,8 @@
 from app import app
-from flask import render_template, request
+from flask import render_template
 
 @app.route('/')
 def homepage():
-	return render_template('index.html')
-
-@app.route('/', methods=['POST'])
-def homepage_post():
-	email = request.form['email']
-	message = request.form['message']
-
-	print email, message
 	return render_template('index.html')
 
 @app.route('/resume/')

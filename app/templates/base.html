@@ -1,41 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!-- Meta Data -->
     <meta charset="UTF-8">
     <meta name="description" content="Nathan Jiang  - Software Engineer">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="Nathan, Jiang, Software, Engineer, Waterloo, Profile">
 
     <meta name="author" content="Nathan Jiang">
-
-
-
     <title>Nathan Jiang - Software Engineer</title>
 
+    <!-- Favicon -->
     <link rel='shortcut icon' href="{{url_for('static', filename='imgs/favicon.ico') }}" type="image">
 
-    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300" rel="stylesheet">
 
-    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
-
-    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css') }}"/>
-    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/bootstrap.css') }}">
-
-
+    
+    <!-- JS libraries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-    <script type="text/javascript" src="{{url_for('static', filename='js/script.js') }}"></script>
     <script type="text/javascript" src="{{url_for('static', filename='js/pt.min.js') }}"></script>
 
-    <!--<link rel="stylesheet" href="{{url_for('static', filename='css/skeleton.css') }}"/> -->
+
+
+    <!-- Bootstrap -->
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/bootstrap.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/bootstrap-theme.css') }}">
+
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css') }}"/>
 
 </head>
+
 <body>
 	{% block content %} {% endblock %}
-	
+	<script type="text/javascript" src="{{url_for('static', filename='js/script.js') }}"></script>
 </body>
-	
+
+    <!-- Custom Script -->
+    
 </html>
