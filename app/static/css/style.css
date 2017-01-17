@@ -1,4 +1,6 @@
-
+a {
+  color: white;
+}
 html, body, .page {
   width: 100%;
   height: 100%;
@@ -86,7 +88,7 @@ html, body, .page {
     margin: 0 auto;
 }
 
-
+/*
 .card {
   position: relative;
   float: left;
@@ -157,7 +159,7 @@ html, body, .page {
     left: 0;
     margin: auto;
 }
-
+*/
 .my-form::-webkit-input-placeholder {
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
@@ -178,9 +180,7 @@ html, body, .page {
   color: #7a7a77;
 }
 
-.link-icon:hover{
-    
-}
+
 
 h2 { 
   font-family: 'Julian Sans One', sans-serif;
@@ -229,7 +229,7 @@ a.nav-link:active
 #p1 { background: #222; }
 #p2 { background: #ff2d5d; }
 #p3 { background: #42dc8e; }
-#p4 { background: #2e43eb; }
+#p4 { background: #419ed8; }
 #p5 { background: #ffe359; }
 
 #t2:target #p2,

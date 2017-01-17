@@ -49,7 +49,7 @@
              <script type="text/javascript">
                  //// 1. Define Space and Form
               var colors = {
-                a1: "#ff2d5d", a2: "#42dc8e", a3: "#2e43eb", a4: "#ffe359",
+                a1: "#ff2d5d", a2: "#42dc8e", a3: "#419ed8", a4: "#ffe359",
                 b1: "#96bfed", b2: "#f5ead6", b3: "#f1f3f7", b4: "#e2e6ef"
               };
               var space = new CanvasSpace("pt").setup( {bgcolor: "#222"} );
@@ -176,58 +176,29 @@
           </div>
           <div class="page scrollPage3" id="p3">
             <div class="container">
-              <div class="row">
-                <div class="col-md-12 col-sm-12">
-                  <h1 class="subTitle">What I've been up to</h1>
-                </div>
+              <div class="col-md-7 col-sm-7">
+                <h1 class="subTitle">Things I've been working on</h1>
               </div>
-
-              <div class="row upperRow">
-                <div class="col-sm-6 col-md-6">
-                  <div class="card effect__click">
-                    <div class="card__front">
-                      <span class="card_front_text">front</span>
-                    </div>
-                    <div class="card__back">
-                      <span class="card_back_text">back</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-md-6">
-                  <div class="card effect__click">
-                    <div class="card__front">
-                      <span class="card_front_text">front</span>
-                    </div>
-                    <div class="card__back">
-                      <span class="card_back_text">back</span>
-                    </div>
-                  </div>
-                </div>                
+              <div class="col-md-4 col-sm-4">
               </div>
-
-              <div class="row lowerRow">
-                <div class="col-sm-6 col-md-6">
-                  <div class="card effect__click">
-                    <div class="card__front">
-                      <span class="card_front_text">front</span>
-                    </div>
-                    <div class="card__back">
-                      <span class="card_back_text">back</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-4 col-md-4">
-                  <div class="card effect__click">
-                    <div class="card__front">
-                      <span class="card_front_text">front</span>
-                    </div>
-                    <div class="card__back">
-                      <span class="card_back_text">back</span>
-                    </div>
-                  </div>
-                </div>                
-              </div>              
             </div>
+            <div id="stack1" class="card-container start">
+              <section id="card1" class="card card1">
+                   <h1>Directions to SMS</h1>
+
+                  <p>A simple solution for those times you are lost in the city without a data plan to turn to. <br> Just text 647 691 3881 with your location and your destination, and wait for a response with the appropriate directions. <br> Created by combining the power of Twilio's SMS API, Google Directions, and a Python Flask server.</p>
+              </section>
+              <section id="card2" class="card card2">
+                   <h1>Staysafewith.me</h1>
+
+                  <p>Sometimes, the fastest way to get home isn't what you're looking for. By utilizing Google's Direction API in conjunction with statistical crime data from the past 10 years, staysafewith.me is a web application that calculates the safest walking path through areas of Detroit. </p>
+              </section>
+              <section id="card3" class="card card3">
+                   <h1>Quest Cabochon</h1>
+
+                  <p>An online, role-playing game designed and implemented with HTML, CSS, Javascript, and Phaser. <br>This fantasy-based quest comes packed with Player-AI combat, comprehensive shop/inventory economy, and a unique action-driven storyline. <br> Future plans to develop a cooperative mode are in the works!!</p>
+              </section>
+          </div>
           </div>
 
 
@@ -272,10 +243,18 @@
               </div>
               <div class="row">
                 <div class="col-md-10 col-sm-10 centerer">
-                  <i class="fa fa-github fa-4" style="font-size: 4em; margin-right: 0.1em;" aria-hidden="true"></i>
-                  <i class="fa fa-linkedin-square fa-4" style="font-size: 4em; margin-right: 0.1em;" aria-hidden="true"></i>
-                  <i class="fa fa-database fa-4" style="font-size: 4em; margin-right: 0.1em;" aria-hidden="true"></i>
-                  <img src="https://s30.postimg.org/gxuty67jl/Hacker_Rank_logo.png" border='0' class="link-icon" style="width: 3.5em; height: 3.5em;" alt='HackerRank_logo'/>
+                  <a href="https://github.com/NathanJiangCS">
+                    <i class="fa fa-github fa-4" style="font-size: 4em; margin-right: 0.1em;" aria-hidden="true"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/in/nathanjiangcs">
+                    <i class="fa fa-linkedin-square fa-4" style="font-size: 4em; margin-right: 0.1em;" aria-hidden="true"></i>
+                  </a>
+                  <a href="http://wcipeg.com/user/Snake">
+                    <i class="fa fa-database fa-4" style="font-size: 4em; margin-right: 0.1em;" aria-hidden="true"></i>
+                  </a>
+                  <a href="https://www.hackerrank.com/n35jiang">
+                    <img src="https://s30.postimg.org/gxuty67jl/Hacker_Rank_logo.png" onmouseover="hover(this);" onmouseout="unhover(this);" class="link-icon" style="width: 3.5em; height: 3.5em;" alt='HackerRank_logo'/>
+                  </a>
                 </div>
               </div>
             </div>
