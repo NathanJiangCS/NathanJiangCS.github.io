@@ -3,10 +3,10 @@
   social_icon: Facebook
   new_window: true
 - name: LinkedIn
-  link: ''
+  link: 'https://www.linkedin.com/in/nathanjiangcs/'
   social_icon: LinkedIn
   new_window: true
 - name: Github
-  link: ''
+  link: 'https://github.com/NathanJiangCS'
   social_icon: Github
   new_window: true
