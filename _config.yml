@@ -1,6 +1,6 @@
 locale: "en-US"
 title: Nathan Jiang | Software Engineer # Title of your site
-url: "https://nathanjiang.com" # the base hostname & protocol for your site
+url: "http://nathanjiang.com" # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. /blog/
 google_analytics_key: ""
 
