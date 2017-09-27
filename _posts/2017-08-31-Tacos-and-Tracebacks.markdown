@@ -4,6 +4,7 @@ title: Tacos, Tequila, and Tracebacks
 categories: Life
 date: 2017-08-31T14:37:44.000Z
 ---
+<img src="/images/fulls/guanajuato.jpg" class="fit image">
 
 I’ve spent the past four months in Mexico working as a software engineer for [Wizeline](https://www.wizeline.com/) and as August comes to an end, so does my first professional internship. Throughout this duration, I’ve faced the countless struggles associated with working in a foreign country -- dissimilar social constructs, cultural and linguistic barriers, and even simple things such as varying climates. Nevertheless, my time in Mexico has been one of the most memorable periods of my life. The people I met, the sights I saw, and the culture I experienced left a mark on me that undoubtedly shapes who I am today. 
 

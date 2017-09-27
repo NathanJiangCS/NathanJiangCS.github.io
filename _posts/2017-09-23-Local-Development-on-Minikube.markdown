@@ -4,8 +4,6 @@ title: Local Development with Minikube
 categories: Software
 date: 2017-09-23T20:31:24.000Z
 ---
-# Local Development with Minikube
-
 <img src="/images/fulls/minikube_logo.png" class="fit image">
 
 ## Part 1 - What is Minikube and Why Use It?
@@ -22,7 +20,6 @@ There are a few requirements that need to be satisfied in order to get Minikube 
 - A virtual machine system. We will use VirtualBox since it is the default VM driver for Minikube. Other alternatives include VMWareFusion, KVM, and Xhyve.
 - Docker
 - Kubernetes CLI
-
 I will quickly run through how to install each of these requirements; however, if you already have what you need, skip to the next sub-section where we will set up Minikube.
 
 #### VirtualBox
