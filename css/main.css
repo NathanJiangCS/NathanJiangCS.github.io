@@ -2071,6 +2071,17 @@
 				width: 100%;
 			}
 
+		.image.normal {
+			display: block;
+			margin: auto;
+			width: 60%;
+
+		}
+
+			.image.normal {
+				width: 60%;
+			}
+
 		.image.avatar {
 			border-radius: 100%;
 		}

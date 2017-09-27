@@ -4,7 +4,7 @@ title: Local Development with Minikube
 categories: Software
 date: 2017-09-23T20:31:24.000Z
 ---
-<img src="/images/fulls/minikube_logo.png" class="fit image">
+<img src="/images/fulls/minikube_logo.png" class="normal image">
 
 ## Part 1 - What is Minikube and Why Use It?
 As Microservice Architecture grows more prominent and becomes a preferred way for developers to create enterprise applications, the need to construct and manage solutions in modular pieces becomes ever more evident. And although the benefits of constructing a microservice for each component are plentiful, it leaves developers wrestling with a slew of small services, each needing to be running and talking with each other in a particular way. This can quickly become disastrous, especially if one point of failure means the entire entity cannot function. It would be magical if there was a way to test the desired functionality on a local machine, with all the integral services operating normally and communicating with each other.
