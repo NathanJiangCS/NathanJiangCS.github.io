@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Local Development with Minikube
+title: Local Development with Minikube (Part 1)
 categories: Software
 date: 2017-09-23T20:31:24.000Z
 ---
 <img src="/images/fulls/minikube_logo.png" class="normal image">
 
-## Part 1 - What is Minikube and Why Use It?
+## What is Minikube and Why Use It?
 As Microservice Architecture grows more prominent and becomes a preferred way for developers to create enterprise applications, the need to construct and manage solutions in modular pieces becomes ever more evident. And although the benefits of constructing a microservice for each component are plentiful, it leaves developers wrestling with a slew of small services, each needing to be running and talking with each other in a particular way. This can quickly become disastrous, especially if one point of failure means the entire entity cannot function. It would be magical if there was a way to test the desired functionality on a local machine, with all the integral services operating normally and communicating with each other.
 
 <img src="/images/fulls/microservice_architecture.png" class="fit image">
 
 Luckily for us, there is Kubernetes and Minikube. Kubernetes provides a simple orchestration system to organize and monitor your applications. Minikube takes this concept and minimalizes it, enabling developers to mobilize and orchestrate microservices locally, on a local VM. Together, they provide the experience of a "Backend-in-a-Box". Deployments are made to the individual microservice codebase -- into a single-node "cluster" (a cluster of one). This node (the local VM) will have all microservices running within as Pods, each exposed to the others through Kubernetes Services.
 
-## Part 2 - Setting Up Minikube on Your Local Machine
+## Setting Up Minikube on Your Local Machine
 Just as a note, I am working on macOS Sierra (version 10.12.6).
 ### Installing the Requirements
 There are a few requirements that need to be satisfied in order to get Minikube up and running. These include:
